@@ -3,7 +3,22 @@ pipeline {
     stages {
         stage('Initialization'){
             steps{
-                echo "Hello World"
+                echo "Variables initialization"
+            }
+        }
+        stage('Build') {
+            steps{
+                echo "Build"
+            }
+        }
+        stage('Test'){
+            steps{
+                echo "Test"
+            }
+        }
+        stage('Deploy'){
+            steps{
+                echo "Deploy"
             }
         }
     }
