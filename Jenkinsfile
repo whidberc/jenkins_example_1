@@ -4,6 +4,8 @@ pipeline {
         stage('Initialization'){
             steps{
                 echo "initialization"
+                sh 'which cmake'
+                sh 'which make'
             }
         }
         stage('Build') {
